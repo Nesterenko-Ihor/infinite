@@ -14,8 +14,7 @@ MySQL таблица со следующими колонок:
 
 Установка: 
 Замените в db.php <pre>
-	$db = mysql_connect("localhost","root","");
-	mysql_select_db("test_boston",$db); 
+	$db = new \Source\DB('localhost', 'root', 'root', 'db');
 </pre>
 на свои данные и создайте в MySQL таблицу со след. структурой 
 <pre>
